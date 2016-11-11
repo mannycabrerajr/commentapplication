@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comment Application</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- ADD A COMMENT -->
+    <div>
+        
+        <form id="commentForm">
+            
+            <h1>Tell Us What You Think</h1>
+            
+            <input type="text" placeholder="Name" id="inputName"><br/>
+            
+            <textarea type="text" placeholder="Comment" id="inputComment" rows="4"></textarea><br/>
+            
+            <button type="button" id="submit" onclick="submitComment()">SUBMIT</button> 
+
+            <!--<button type="button" id="remove" onclick="removeComment()">REMOVE</button>-->
+
+        </form>
+       	
+        <ul id="comment" class="list-group">
+    	</ul>
+
+    </div>
+    
+	<script src="js/main.js"></script>
+</body>
+</html>
